@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4c67d8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.StudentSolutionController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/directions.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="errorMessage" layoutX="137.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button fx:id="pendingButton" layoutX="102.0" layoutY="113.0" mnemonicParsing="false" onAction="#handlePendingAction" style="-fx-background-color: #f3f3f3;" text="Pending problems">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="historyButton" layoutX="385.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleHistoryAction" style="-fx-background-color: #f3f3f3;" text=" History">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backButton" layoutX="47.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleBackAction" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.SolutionDetailsController">
+   <children>
+      <Text fx:id="productName" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NumeProblema" textAlignment="CENTER" wrappingWidth="600.6666666666666">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity:" wrappingWidth="102.24673461914062">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of times encountered:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solved:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="quantity" layoutX="159.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPrice" layoutX="177.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="deliveryMethod" layoutX="229.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="229.0" fitWidth="282.0" layoutX="179.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ccb-delivery-o.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="540.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="errorMessage" layoutX="42.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button fx:id="orderStatus" layoutX="70.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleOrderStatus" prefHeight="39.0" prefWidth="177.0" text="Mark as solved">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

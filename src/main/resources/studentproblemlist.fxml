@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.StudentProblemListController">
+   <children>
+      <Label layoutX="52.0" layoutY="11.0" text="Your problems">
+         <font>
+            <Font name="Verdana" size="17.0" />
+         </font>
+      </Label>
+      <ListView fx:id="productsList" layoutX="52.0" layoutY="73.0" prefHeight="297.0" prefWidth="496.0" />
+      <Button fx:id="addProductButton" layoutX="52.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleAddProductAction" text="Add problem">
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="errorMessage" layoutX="300.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="283.0" />
+      <Button fx:id="backButton" layoutX="164.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleBackAction" text="Back">
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

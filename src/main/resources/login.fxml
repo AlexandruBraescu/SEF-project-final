@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.LoginController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="350.0" fitWidth="363.0" layoutX="-34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/happy_farmer.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="85.0" BorderPane.alignment="CENTER" />
+    </right>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="279.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="84.0" layoutY="99.0" prefHeight="31.0" prefWidth="127.0" text="Username">
+                    <font>
+                        <Font name="Verdana" size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="84.0" layoutY="130.0" prefHeight="5.0" prefWidth="151.0" promptText="username">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+                <Label layoutX="84.0" layoutY="168.0" prefHeight="31.0" prefWidth="127.0" text="Password">
+                    <font>
+                        <Font name="Verdana" size="17.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="password" layoutX="85.0" layoutY="199.0" promptText="password">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></PasswordField>
+                <Button fx:id="loginButton" layoutX="85.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleLogInAction" style="-fx-background-color: #c1e1c1; -fx-border-color: #C0C0C0;" text="Log In">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                   <cursor>
+                      <Cursor fx:constant="HAND" />
+                   </cursor>
+                </Button>
+            <Text fx:id="wrongLogin" fill="#ff4f4f" layoutX="84.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.13671875">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="registerLink" layoutX="84.0" layoutY="336.0" onMouseClicked="#handleRegisterAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Not on Farmers Market yet? Register an account!" wrappingWidth="172.13671875">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
