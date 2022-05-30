@@ -1,7 +1,6 @@
 <<<<<<< HEAD
-# FarmersMarketApp
-Farmers Market App for Software Engineering Fundamentals Project
-Team: Ana & Dean
+# Student Council
+Team: Alecu si Horia
 =======
 # Simple Registration Example
 A JavaFX Application demonstrating how to implement a simplistic approach of a registration use case using the following technologies:
